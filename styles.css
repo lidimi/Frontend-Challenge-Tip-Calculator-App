@@ -12,6 +12,7 @@ GLOBAL SELECTORS
 
 body {
     width: 100%;
+    min-width: 700px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,4 +20,162 @@ body {
     flex-direction: column;
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
+}
+
+
+
+form {
+    width: 60%;
+    min-width: 750px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    font-size: 1.7rem;
+    letter-spacing: 6px;
+    color: hsl(186, 14%, 43%);
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2.5rem;
+}
+
+legend {
+    margin-bottom: 1.5rem;
+}
+
+.block {
+    display: block;
+}
+
+
+/*=========== 
+INPUT SECTION
+============= */
+
+.inputs {
+    color: hsl(183, 100%, 15%);
+    width: 50%;
+    padding: 2rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: .5em 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1.1rem;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+}
+
+#bill {
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    margin-bottom: 2.5rem;
+}
+
+#people {
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+}
+
+.grid-buttons label {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: .6rem 0;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+}
+
+.grid-buttons label:last-child {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+}
+
+/*============= 
+DISPLAY SECTION
+=============== */
+
+.display {
+    width: 50%;
+    padding: 2.5rem;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.amount h2 {
+    font-size: 1rem;
+    color: white;
+}
+
+.amount p {
+    color: hsl(172, 67%, 45%);
+    font-size: 3rem;
+}
+
+.person {
+    color: hsl(184, 14%, 56%);
+}
+
+.display button {
+    margin-top: auto;
+    width: 100%;
+    padding: .7rem 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(184, 62%, 30%);
+    color: hsl(183, 100%, 15%);
+}
+
+
+/*============ 
+ACTIVE STATES
+============== */
+
+label:has(input[type="radio"]:checked) {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+
+}
+
+input:hover,
+label:has(input[type="radio"]) {
+    cursor: pointer;
 }

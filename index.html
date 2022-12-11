@@ -14,43 +14,48 @@
   <h1>Spli
     <br>tter
   </h1>
-  <main>
-    <form action="#">
-      <section class="inputs"></section>
-      <label for="bill">Bill</label>
+  <form action="#">
+    <section class="inputs">
+      <label class="block" for="bill">Bill</label>
       <input type="number" id="bill" name="bill" value="0" placeholder="0">
       <fieldset class="buttons">
         <legend>Select Tip %</legend>
         <div class="grid-buttons">
-          <label for="5">5%</label>
-          <input type="radio" name="tip" id="5" value="5">
-          <label for="10">10%</label>
-          <input type="radio" name="tip" id="10" value="10">
-          <label for="15">15%</label>
-          <input type="radio" name="tip" id="15" value="15">
-          <label for="25">25%</label>
-          <input type="radio" name="tip" id="25" value="25">
-          <label for="50">50%</label>
-          <input type="radio" name="tip" id="50" value="50">
-          <label for="custom">Custom</label>
-          <input type="radio" name="tip" id="custom" value="0">
+          <label for="5">5%
+            <input type="radio" name="tip" id="5" value="5">
+          </label>
+          <label for="10">10%
+            <input type="radio" name="tip" id="10" value="10">
+          </label>
+          <label for="15">15%
+            <input type="radio" name="tip" id="15" value="15">
+          </label>
+          <label for="25">25%
+            <input type="radio" name="tip" id="25" value="25">
+          </label>
+          <label for="50">50%
+            <input type="radio" name="tip" id="50" value="50">
+          </label>
+          <label for="custom">Custom
+            <input type="radio" name="tip" id="custom" value="0">
+          </label>
         </div>
       </fieldset>
-      <label for="people">Number of People</label>
-      <input type="number" name="people" id="people" value="0">
-      <section class="display">
-        <div class="amount">
-          <h2>Tip Amount <br> / person</h2>
-          <p>$0.00</p>
-        </div>
-        <div class="amount">
-          <h2>Total <br> / person</h2>
-          <p>$0.00</p>
-        </div>
-        <button type="reset">RESET</button>
-      </section>
-    </form>
-  </main>
+      <label class="block" for="people">Number of People</label>
+      <input type="number" name="people" id="people" value="0" placeholder="0">
+    </section>
+    <section class="display">
+      <div class="amount">
+        <h2>Tip Amount <br><span class="person">/ person</span></h2>
+        <p>$0.00</p>
+      </div>
+      <div class="amount">
+        <h2>Total <br><span class="person">/ person</span></h2>
+        <p>$0.00</p>
+      </div>
+      <button type="reset">RESET</button>
+    </section>
+  </form>
 
 
   <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
