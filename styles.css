@@ -176,6 +176,6 @@ label:has(input[type="radio"]:checked) {
 }
 
 input:hover,
-label:has(input[type="radio"]) {
+label:has(input[type="radio"]):hover {
     cursor: pointer;
 }
