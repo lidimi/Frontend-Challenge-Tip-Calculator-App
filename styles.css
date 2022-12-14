@@ -180,6 +180,17 @@ label:has(input[type="radio"]):hover {
     cursor: pointer;
 }
 
-.invalid-input {
-    border: 3px solid salmon;
+button:hover {
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
+}
+
+label[for="people"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display-error {
+    color: rgb(199, 77, 77);
 }
