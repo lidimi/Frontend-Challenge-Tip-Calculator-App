@@ -1,31 +1,29 @@
 const billInput = document.querySelector('#bill');
 const peopleInput = document.querySelector('#people');
-const allInputs = document.querySelectorAll('input');
-const tipBtns = document.querySelectorAll("input[name='tip']");
+const form = document.querySelector('form');
+const tipBtns = document.querySelector(".grid-buttons");
 
 
-const tipAmount = document.querySelector('.tip-amount')
+const tipAmount = document.querySelector('.tip-amount');
 const total = document.querySelector('.total-person');
 
-let tip = 0;
+let tipValue = 0;
 
-function getTipValue() {
-    for (let i = 0; i < tipBtns.length; i++) {
-        if (tipBtns[i].checked) {
-            tip = tipBtns[i]
-        } else {
-            tip = 0;
-        }
+tipBtns.addEventListener('click', (e) => {
+    if (e.target.tagName.toLowerCase() === 'input') {
+        tipValue = e.target.value
     }
-}
+})
 
-allInputs.forEach(input => {
-    input.addEventListener('input', () => {
-        getTipValue()
-        let totalPerson = ((billInput.value * tip.value) + (+billInput.value)) / (peopleInput.value);
-        let tipPerson = (billInput.value * tip.value) / (peopleInput.value);
+form.addEventListener('input', () => {
+    tipAmount.innerHTML = `$${((billInput.value * tipValue) / peopleInput.value).toFixed(2)}`;
+    total.innerHTML = `$${((+billInput.value + (+billInput.value * tipValue)) / +peopleInput.value).toFixed(2)}`
+})
 
-        total.innerHTML = `$${totalPerson.toFixed(2)}`;
-        tipAmount.innerHTML = `$${tipPerson.toFixed(2)}`
-    })
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () => {
+    tipAmount.innerHTML = `$0.00`
+    total.innerHTML = `$0.00`
+    tipValue = 0;
 })

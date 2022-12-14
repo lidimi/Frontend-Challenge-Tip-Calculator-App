@@ -179,3 +179,7 @@ input:hover,
 label:has(input[type="radio"]):hover {
     cursor: pointer;
 }
+
+.invalid-input {
+    border: 3px solid salmon;
+}
