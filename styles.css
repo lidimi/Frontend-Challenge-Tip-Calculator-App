@@ -70,7 +70,7 @@ INPUT SECTION
     padding: 2rem;
 }
 
-input[type="number"] {
+.number {
     width: 100%;
     padding: .5em 1rem;
     border: none;
@@ -117,6 +117,12 @@ input[type="radio"] {
 .grid-buttons label:last-child {
     background-color: hsl(189, 41%, 97%);
     color: hsl(186, 14%, 43%);
+}
+
+label[for="people"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*============= 
@@ -176,7 +182,7 @@ label:has(input[type="radio"]:checked) {
 }
 
 input:hover,
-label:has(input[type="radio"]):hover {
+label:hover {
     cursor: pointer;
 }
 
@@ -185,12 +191,32 @@ button:hover {
     background-color: hsl(172, 67%, 45%);
 }
 
-label[for="people"] {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.grid-buttons label:focus-within {
+    background-color: hsl(172, 67%, 45%);
 }
 
 .display-error {
     color: rgb(199, 77, 77);
+}
+
+/*========== 
+CUSTOM INPUT
+============  */
+
+.label-for-custom {
+    position: relative;
+}
+
+.custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: none;
 }

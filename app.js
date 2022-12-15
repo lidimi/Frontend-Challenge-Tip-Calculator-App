@@ -7,6 +7,11 @@ const displayError = document.querySelector('.display-error')
 const tipAmount = document.querySelector('.tip-amount');
 const total = document.querySelector('.total-person');
 
+const customInput = document.querySelector('.custom');
+
+
+// GET VALUE OF RADIO BUTTONS
+
 let tipValue = 0;
 
 tipBtns.addEventListener('click', (e) => {
@@ -14,6 +19,13 @@ tipBtns.addEventListener('click', (e) => {
         tipValue = e.target.value
     }
 })
+
+customInput.addEventListener('input', () => {
+    tipValue = 0;
+    tipValue = (+customInput.value / 100)
+})
+
+// INPUT LISTENERS 
 
 form.addEventListener('input', () => {
     if (peopleInput.value === '0') {
@@ -40,4 +52,7 @@ btn.addEventListener('click', () => {
     tipValue = 0;
 })
 
-// TODO: CREATE CUSTOM INPUT BUTTON 
+
+
+
+
