@@ -9,6 +9,7 @@ const total = document.querySelector('.total-person');
 
 const customInput = document.querySelector('.custom');
 
+const radioBtnsLabels = document.querySelectorAll('.grid-buttons label');
 
 // GET VALUE OF RADIO BUTTONS
 
@@ -17,6 +18,7 @@ let tipValue = 0;
 tipBtns.addEventListener('click', (e) => {
     if (e.target.tagName.toLowerCase() === 'input') {
         tipValue = e.target.value
+        customInput.value = '0'
     }
 })
 
@@ -51,8 +53,4 @@ btn.addEventListener('click', () => {
     total.innerHTML = `$0.00`
     tipValue = 0;
 })
-
-
-
-
 

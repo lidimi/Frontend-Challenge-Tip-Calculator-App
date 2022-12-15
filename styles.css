@@ -220,3 +220,48 @@ CUSTOM INPUT
     border-radius: 5px;
     border: none;
 }
+
+
+/*=========== 
+MEDIA QUERIES
+=============  */
+
+@media (max-width: 750px) {
+
+    body {
+        width: 100%;
+        min-width: 265px;
+        max-width: 750px;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+        min-width: 265px;
+        padding: .7rem;
+        flex-direction: column;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    h1 {
+        margin: 3.5rem 0;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .grid-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .display {
+        width: 100%;
+    }
+
+    .amount p {
+        font-size: 1.8rem;
+    }
+
+}
