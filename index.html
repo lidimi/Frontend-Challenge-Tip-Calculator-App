@@ -10,56 +10,58 @@
 </head>
 
 <body>
+  <header>
+    <h1>Spli
+      <br>tter
+    </h1>
+  </header>
+  <main>
+    <form action="#">
+      <div class="inputs">
+        <label class="block" for="bill">Bill</label>
+        <input class="number" type="number" id="bill" name="bill" value="0" placeholder="0" min="0">
+        <fieldset class="buttons">
+          <legend>Select Tip %</legend>
+          <div class="grid-buttons">
+            <label for="5">5%
+              <input type="radio" name="tip" id="5" value="0.05">
+            </label>
+            <label for="10">10%
+              <input type="radio" name="tip" id="10" value="0.10">
+            </label>
+            <label for="15">15%
+              <input type="radio" name="tip" id="15" value="0.15">
+            </label>
+            <label for="25">25%
+              <input type="radio" name="tip" id="25" value="0.25">
+            </label>
+            <label for="50">50%
+              <input type="radio" name="tip" id="50" value="0.50">
+            </label>
+            <label class="label-for-custom" for="custom">Custom
+              <input class="custom" type="number" name="tip" id="custom" min="0" max="100" placeholder="Custom">
+            </label>
 
-  <h1>Spli
-    <br>tter
-  </h1>
-  <form action="#">
-    <section class="inputs">
-      <label class="block" for="bill">Bill</label>
-      <input class="number" type="number" id="bill" name="bill" value="0" placeholder="0" min="0">
-      <fieldset class="buttons">
-        <legend>Select Tip %</legend>
-        <div class="grid-buttons">
-          <label for="5">5%
-            <input type="radio" name="tip" id="5" value="0.05">
-          </label>
-          <label for="10">10%
-            <input type="radio" name="tip" id="10" value="0.10">
-          </label>
-          <label for="15">15%
-            <input type="radio" name="tip" id="15" value="0.15">
-          </label>
-          <label for="25">25%
-            <input type="radio" name="tip" id="25" value="0.25">
-          </label>
-          <label for="50">50%
-            <input type="radio" name="tip" id="50" value="0.50">
-          </label>
-          <label class="label-for-custom" for="custom">Custom
-            <input class="custom" type="number" name="tip" id="custom" min="0" max="100" placeholder="Custom">
-          </label>
+          </div>
+        </fieldset>
+        <label class="block" for="people">Number of People <span class="display-error"></span></label>
+        <input class="number" type="number" name="people" id="people" min="1" value="1" placeholder="0" min="0">
 
+      </div>
+      <div class="display">
+        <div class="amount">
+          <h2>Tip Amount <br><span class="person">/ person</span></h2>
+          <p class="tip-amount">$0.00</p>
         </div>
-      </fieldset>
-      <label class="block" for="people">Number of People <span class="display-error"></span></label>
-      <input class="number" type="number" name="people" id="people" min="1" value="1" placeholder="0" min="0">
-
-    </section>
-    <section class="display">
-      <div class="amount">
-        <h2>Tip Amount <br><span class="person">/ person</span></h2>
-        <p class="tip-amount">$0.00</p>
+        <div class="amount">
+          <h2>Total <br><span class="person">/ person</span></h2>
+          <p class="total-person">$0.00</p>
+        </div>
+        <button type="reset">RESET</button>
       </div>
-      <div class="amount">
-        <h2>Total <br><span class="person">/ person</span></h2>
-        <p class="total-person">$0.00</p>
-      </div>
-      <button type="reset">RESET</button>
-    </section>
-  </form>
+    </form>
 
-
+  </main>
   <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Lidia</a>. -->
   <script src="app.js"></script>
