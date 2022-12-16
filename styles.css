@@ -11,8 +11,8 @@ GLOBAL SELECTORS
 }
 
 body {
+    min-width: 750px;
     width: 100%;
-    min-width: 700px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,10 +22,14 @@ body {
     background-color: hsl(185, 41%, 84%);
 }
 
+main {
+    width: 60%;
+    min-width: 750px;
+}
 
 
 form {
-    width: 60%;
+    width: 100%;
     min-width: 750px;
     background-color: white;
     padding: 1rem;
@@ -230,9 +234,15 @@ MEDIA QUERIES
 
     body {
         width: 100%;
+        height: auto;
         min-width: 265px;
         max-width: 750px;
-        height: auto;
+    }
+
+    main {
+        width: 100%;
+        min-width: 265px;
+
     }
 
     form {
