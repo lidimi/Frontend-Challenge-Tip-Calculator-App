@@ -14,6 +14,5 @@ Moim zadaniem było jak najdokładniejsze zaimplementowanie designu i funkcjonal
 
 ## O projekcie
 
-Projekt polegał na zaprogramowaniu kalkulatora, który oblicza wysokość napiwku i sumy całkowitej rachunku na podaną ilość osób. Stworzony został z użyciem czystego Vanilla JS  :innocent:
-
+Projekt polegał na zaprogramowaniu kalkulatora, który oblicza wysokość napiwku i sumy całkowitej rachunku na podaną ilość osób. Został stworzony z użyciem HTML, CSS i czystego Vanilla JS  :innocent:
 
